@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    environment {
+        GOCACHE = "${JENKINS_HOME}/go-cache"
+    }
     stages {
         stage('Unit Tests - Backend') {
             agent{
