@@ -31,9 +31,7 @@ pipeline {
                     publishHTML(target: [
                         reportName: 'Backend Coverage Report',
                         reportDir: 'bugtracker-backend/reports',
-                        reportFiles: 'coverage.html',
-                        alwaysLinkToLastBuild: true,
-                        keepAll: true
+                        reportFiles: 'coverage.html'
                     ])
                 }
             }
