@@ -53,6 +53,7 @@ pipeline {
                                 rm -rf reports
                                 mkdir -p reports
                                 mv coverage/ reports/
+                                echo "done"
                             '''
                         }
                     }
