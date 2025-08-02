@@ -51,7 +51,7 @@ pipeline {
                                 npm ci
                                 npm test
                                 mkdir -p reports
-                                mv coverage reports/
+                                mv coverage/* reports/coverage/
                             '''
                         }
                     }
@@ -64,11 +64,6 @@ pipeline {
                                 reportFiles: 'index.html'
                             ])
                         }
-                    }
-                }
-                stage('World') {
-                    steps{
-                        echo "Welcome Home!"
                     }
                 }
             }
